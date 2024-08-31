@@ -1,0 +1,68 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a background color and use flexbox to center content */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling the main container */
+.App {
+  text-align: center;
+  background-color: white;  /* Added background color to make the elements stand out */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);  /* Added shadow for better visibility */
+}
+
+/* Button styling */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;  /* Added margin to separate the button from the input field */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Input field styling */
+input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  input[type="text"] {
+    width: 80%;
+  }
+  
+  button {
+    width: 80%;
+  }
+}
